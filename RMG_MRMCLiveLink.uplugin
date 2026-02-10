@@ -5,19 +5,19 @@
 	"FriendlyName": "RMG_MRMCLiveLink",
 	"Description": "LiveLink Source for receiving Camera movement from Mark Roberts Bolt robot",
 	"Category": "Animation",
-	"CreatedBy": "Epic Games, Inc.",
-	"CreatedByURL": "https://www.epicgames.com",
-	"DocsURL": "https://docs.unrealengine.com/en-US/Engine/Animation/LiveLinkPlugin/index.html",
+	"CreatedBy": "RiTE Media",
+	"DocsURL": "https://github.com/KevinRiTE/RiTE_MRMC_LiveLinkl",
 	"MarketplaceURL": "",
 	"SupportURL": "",
+	"EngineVersion": "5.7",
 	"CanContainContent": true,
 	"IsBetaVersion": false,
 	"Installed": false,
 	"Modules": [
-	    {
-      "Name": "RMG_MRMCLiveLink",
-      "Type": "Runtime",
-      "LoadingPhase": "Default"
-    }
-  ]
+		{
+			"Name": "RMG_MRMCLiveLink",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
 }

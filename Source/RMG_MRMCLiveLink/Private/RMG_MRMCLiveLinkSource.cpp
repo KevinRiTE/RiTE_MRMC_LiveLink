@@ -212,7 +212,7 @@ R"({ "sources": [{
         for (auto Subj : SubjectArray) {
             Subject NewSubject;
             auto SubjectObject = Subj->AsObject();
-            FName SubjectName = *SubjectObject->GetStringField("subject");
+            FName SubjectName = *SubjectObject->GetStringField(TEXT("subject"));
             NewSubject.SubjectName = SubjectName;
 
             FLiveLinkStaticDataStruct StaticDataStruct = FLiveLinkStaticDataStruct(FLiveLinkSkeletonStaticData::StaticStruct());
@@ -238,7 +238,7 @@ R"({ "sources": [{
                 }
 
                 FString BoneParent;
-                if (BoneObject->TryGetStringField("parent", BoneParent))
+                if ((BoneObject->TryGetStringField(TEXT("parent"), BoneParent)))
                 {
                     NewBone.ParentName = BoneParent;
                     if (!BoneParent.IsEmpty()) {
